@@ -39,7 +39,7 @@ def main() -> None:
         curr = get_contents()
 
         if previous != curr:
-            if previous == 'QUIT':
+            if curr == 'QUIT':
                 clear_file()
                 break
             webbrowser.open(f'http://www.youtube.com/results?search_query={curr}')
